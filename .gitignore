@@ -13,6 +13,7 @@
 *.idea
 *.iml
 /out/
+/target
 .idea_modules/
 # *.iml
 # modules.xml
