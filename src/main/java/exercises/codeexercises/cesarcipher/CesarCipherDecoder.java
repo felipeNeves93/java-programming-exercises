@@ -21,10 +21,10 @@ public class CesarCipherDecoder {
     }
 
     private int getRotatedLetterPositionCesarCipher(int currentPosition) {
-        final int ENGLISH_ALPHHABET_SIZE = ENGLISH_ALPHABET.length;
+        final int ENGLISH_ALPHABET_SIZE = ENGLISH_ALPHABET.length;
         int rotatedPosition = CESAR_CIPHER_ROTATOR + currentPosition;
 
-        return rotatedPosition >= ENGLISH_ALPHHABET_SIZE ? rotatedPosition - ENGLISH_ALPHHABET_SIZE : rotatedPosition;
+        return rotatedPosition >= ENGLISH_ALPHABET_SIZE ? rotatedPosition - ENGLISH_ALPHABET_SIZE : rotatedPosition;
     }
 
     private int findLetterPosition(char letter) {
