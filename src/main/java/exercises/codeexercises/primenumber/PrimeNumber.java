@@ -2,10 +2,16 @@ package exercises.codeexercises.primenumber;
 
 public class PrimeNumber {
 
-    public boolean isPrimeNumber(Integer number) {
-        if (number < 0) {
+    public boolean isPrimeNumber(int number) {
+        if (number <= 0 || number == 1) {
             return false;
         }
-        return (number % 2 > 0) && (number % 3 > 0);
+
+        for (int i = 2; 2 * i < number; i++) {
+            if (number % i == 0) {
+                return false;
+            }
+        }
+        return true;
     }
 }
