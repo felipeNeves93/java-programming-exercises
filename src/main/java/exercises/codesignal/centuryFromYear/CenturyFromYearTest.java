@@ -24,8 +24,8 @@ public class CenturyFromYearTest {
 
     @Test
     public void getCenturyFromYear_21_ifYearIs2020() {
-        final int EXPECTED_CENTURY = 21;
-
+        final int EXPECTED_CENTURY = 21
+                ;
         assertEquals(EXPECTED_CENTURY, centuryFromYear.getCenturyFromYear(2020));
     }
 }
