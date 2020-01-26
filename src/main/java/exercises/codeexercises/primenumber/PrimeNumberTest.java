@@ -21,6 +21,6 @@ public class PrimeNumberTest {
 
     @Test
     public void isPrimeNumber_false_ifNumberIsNotPrime() {
-        assertFalse(primeNumber.isPrimeNumber(4));
+        assertFalse(primeNumber.isPrimeNumber(9));
     }
 }
